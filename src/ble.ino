@@ -19,8 +19,8 @@ const size_t UART_TX_BUF_SIZE = 64;
 const unsigned long MS_PERIOD = 2000;
 
 struct customData {
-uint16_t companyID;
-int16_t data;
+  uint16_t companyID;
+  int16_t data;
 };
 
 uint8_t txBuf[UART_TX_BUF_SIZE];
