@@ -1,10 +1,3 @@
-/*
- * Project ble
- * Description:
- * Author:
- * Date:
- */
-
 // BLE Demonstration
 #include <Particle.h>
 SYSTEM_MODE(MANUAL)
@@ -99,6 +92,7 @@ void setup() {
 void loop() {
   static uint32_t msLast = 0;
   if (millis() - msLast < MS_PERIOD) return;
+  
   msLast = millis();
   float temp = random(100) / 10.0;
   setAdvertisingData(temp * 10.0);
